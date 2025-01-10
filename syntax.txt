@@ -1,0 +1,37 @@
+TextWarp
+
+
+
+Main file / background (main.tw)
+Each sprite has a folder, and file (sprite.tw)
+Not case sensitive
+Has both a console and visual output
+Visual output is limited to 4:3
+Easy syntax
+
+
+MISC:
+
+help()
+//comment
+
+
+EVENTS:
+
+
+Start:
+//code
+
+:
+
+
+If ():
+//code
+
+:
+
+
+If () then:
+//code
+
+:
