@@ -1,0 +1,19 @@
+Example code:
+
+
+<Start>
+
+Create(x)
+Set(x, 1)
+
+Forever:
+If (x = 1):
+Print(“‘X’ equals 1!”)
+:Else:
+Print(“Your code doesn’t work”)
+:
+Delete(x)
+EndLoop()
+:
+
+<Kill>
