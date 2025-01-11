@@ -4,88 +4,73 @@ TextWarp
 
 Main file / background (main.tw)
 Each sprite has a folder, and file (sprite.tw)
-Not case sensitive
 Has both a console and visual output
-Easy syntax
-No indentation
+Has the same syntax as python
+Compatible with python files in console
+
+
+Syntax:
 
 
 
 
 
 
-fatal events: <>
-General functions, variables, and coordinates: ()
-Text: (“text”)
-Sprites: []
-Messages: {}
-Loops start and end with “:”
+Example code:
 
 
-Start/End
+//main.tw
 
-<start>
-<kill>
-OnMessage{message}
-SendMessage{message}
+<Start>
+
+<Kill>
 
 
 
+File structure:
 
-MISC:
+Main.tw
+sprite_name.tw
+/assets
+/assets/main/
+/assets/main/sounds/sound.mp3
+/assets/sprite_name/costumes/costume.png
+/assets/main/costumes/costume.png
+Etc
 
-help()
-help(print)
-//comment
-
-Console:
-
-Print(“text”)
-Input(“”)
-
-
-Motion:
-
-goto(x,y)
-goto[sprite]
-Glide(seconds)(x,y)
-Show()
-Hide()
-
-Variables:
-
-Set(x, x +1)
-Create(x)
-Delete(x)
+Visual Commands:
 
 
 
+Console Commands (Literally compatible with python):
 
-EVENTS:
-
-
-Start:
-//code
-
-:
+From Python:
 
 
-If ():
-//code
+abs()
+all()
+any()
+ascii()
+bin()
+bool()
+bytearray()
+bytes()
+callable()
+chr()
+classmethod()
+compile()
+complex()
+delattr()
+dict()
+dir()
+divmod()
+enumerate()
+eval()
+exec()
+filter()
+float()
+format()
+frozenset()
+getattr()
 
-:
-
-
-If ():
-//code
-
-:
-
-Forever:
-
-
-
-
-:
-
-
+To be continued lol
