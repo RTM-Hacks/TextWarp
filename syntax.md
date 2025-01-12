@@ -1,143 +1,140 @@
-TextWarp
+『🔠』 •  TextWarp
+
+• Main file / Background (main.tw)
+• Each Sprite has a Folder, and File (sprite.tw)
+• Has both a console and visual output
+• Has the same syntax as Python
+• Compatible with Python files in console
 
 
+『🔢』 •  Syntax:
 
-Main file / background (main.tw)
-Each sprite has a folder, and file (sprite.tw)
-Has both a console and visual output
-Has the same syntax as python
-Compatible with python files in console
+• Same as Python 
 
 
-Syntax:
+『🗂️』 •  File Structure:
 
-Literally python syntax
-
-
-
-
-File structure:
-
-Main.tw
+main.tw
 sprite_name.tw
 /assets
 /assets/main/
 /assets/main/sounds/sound.extension
 /assets/main/costumes/costume.extension
 /assets/sprite_name/costumes/costume.png
-Etc
+
+etc.
 
 
-Visual Commands:
+『🧩』 •  Visual Commands:
 
-From Scratch:
+『🐱』 •  From Scratch:
 
-Motion (n/a in main.tw because the background can’t move):
+• Motion (N/A in main.tw because the background can’t move):
 
 
 Move(steps)
 Turn(degrees)
-Goto(sprite, mouse, random position)
-Goto(x,y)
+GoTo(sprite, mouse, random position)
+GoTo(x,y)
 Glide(seconds)(sprite, mouse, random position, x, y, x and y)
-pointat(sprite, mouse, random position, direction)
+PointAt(sprite, mouse, random position, direction)
 ChangeChord(x or y)(amount)
 SetChord(x, y or x and y)(x, y or x and y)
-Edgebounce(true, false)
+EdgeBounce(true, false)
 RotationStyle(idek lol)
 
 
-Looks:
+• Looks:
 
-say(“text”)(seconds)
-think(“text”)(seconds)
-Costume(name)
-Nextcostume()
+Say(“text”)(seconds)
+Think(“text”)(seconds)
+Costume(name) (N/A in main.tw because the background doesn’t have costumes it has backdrops)
+NextCostume() (N/A in main.tw because the background doesn’t have costumes it has backdrops)
 Backdrop(name)
 BackdropWait()
 Nextbackdrop()
-Changesize(amount)
+ChangeSize(amount) 
 Size(%)
 Show()
 Hide()
-Layer(front, back) or (- amount) or (+ amount) or (layernumber)
+Layer(front, back) or (- amount) or (+ amount) or (layernumber) (N/A in main.tw because the background is the background)
 
-Sound:
+• Sound:
 
 I’m going to do sound differently, scratch sound sucks
 
 
-Events:
+• Events:
 
 
-OnStart()
-OnKey()
-OnClick()
-OnBackdrop()
-When()
-OnMessage()
+OnStart(code)
+OnKey(key)(code)
+OnClick(code)
+OnBackdrop(backdrop)(code)
+When(thing)(code)
+OnMessage(message)(code)
 
-SendMessage()
-SendMessageWait()
+SendMessage(message)
+SendMessageWait(message)
 
-Control:
+• Control:
 
 Wait(seconds)
 Repeat(amount)(code)
 Forever(code)
 If()(then)(else)
 WaitUntil()
-Repeatuntil()(code)
+RepeatUntil()(code)
 StopScript()
 Kill()
 
-WhenClone(code)
+WhenClone(code) 
 CreateClone()
 DeleteClone()
 
 
-Sensing:
+• Sensing:
 
-Ask(“text”) will be made obsolete by my new text functionality 
+Ask(“text”) will be made obsolete by my new text functionality 
 DragMode(1 or 0)
 Timer(stop) or (start) or (reset)
 
-Variables:
+• Variables:
 
 Set(variable)(value)
 Change(variable)(value)
 
-ShowVar(variable) will be made obsolete by my new text functionality 
+ShowVar(variable) will be made obsolete by my new text functionality 
 HideVar(variable) will be made obsolete by my new text functionality
 
-Lists:
+• Lists:
 
 ListAdd(thing)(list)
 ListDelete(all, or thing)(list)
 ListInsert(thing)(at)(list)
 ListReplace(thing)(thing)(list)
 
-Showlist(list) will be made obsolete by my new text functionality 
-Hidelist(list) will be made obsolete by my new text functionality 
+Showlist(list) will be made obsolete by my new text functionality 
+Hidelist(list) will be made obsolete by my new text functionality 
 
-Custom Blocks:
+• Custom Blocks:
 
-Just functions lol
-
-
-From TurboWarp:
+Functions
 
 
+『🏎️』 •  From TurboWarp:
 
 
 
-New Visual commands:
+『🎨』 •  New Visual Commands:
 
 
 
-Console Commands (Literally compatible with python):
+『⌨️』 •  Console Commands (Compatible with Python):
 
-Python Built In Commands:
+
+
+『🐍』 •  Python Built In Commands:
 
 abs()
 all()
@@ -207,23 +204,22 @@ type()
 vars()
 zip()
 
-Python String Methods:
+• Python String Methods:
 
+• Python List/Array Methods:
 
-Python list/array methods:
+• Python Dictionary Methods:
 
-Python dictionary methods:
-
-Python tuple methods:
+• Python Tuple Methods:
 
 count()
 index()
 
-Python set methods:
+• Python Set Methods:
 
-Python file methods:
+• Python File Methods:
 
-Python Keywords:
+• Python Keywords:
 
 
 
