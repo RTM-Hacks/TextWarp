@@ -69,16 +69,34 @@ I’m going to do sound differently, scratch sound sucks
 
 OnStart(code)
 
-executes what is inside "()" when the project is run.
+executes what is inside (code) when the project is run.
 
 OnKey(key)(code)
-OnClick(code)
+
+executes what is inside (code) when the keyboard key defined in (key) is pressed.
+
+OnClick()
+
+executes what is inside (code) when the sprite is clicked.
+
 OnBackdrop(backdrop)(code)
+
+executes what is inside (code) when the backdrop specified in (backdrop) is the current backdrop.
+
 When(thing)(code)
+
 OnMessage(message)(code)
 
+executes (code) when the message (message) is recived.
+
 SendMessage(message)
+
+sends the message (message) to all sprites, tells a diffirent sprite to execute a part of code.
+
 SendMessageWait(message)
+
+sends the message (message), and waits.
+
 
 • Control:
 
