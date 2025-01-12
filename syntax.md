@@ -11,8 +11,7 @@ Compatible with python files in console
 
 Syntax:
 
-
-
+Literally python syntax
 
 
 
@@ -23,10 +22,11 @@ Main.tw
 sprite_name.tw
 /assets
 /assets/main/
-/assets/main/sounds/sound.mp3
+/assets/main/sounds/sound.extension
+/assets/main/costumes/costume.extension
 /assets/sprite_name/costumes/costume.png
-/assets/main/costumes/costume.png
 Etc
+
 
 Visual Commands:
 
@@ -49,19 +49,80 @@ RotationStyle(idek lol)
 
 Looks:
 
+say(“text”)(seconds)
+think(“text”)(seconds)
+Costume(name)
+Nextcostume()
+Backdrop(name)
+BackdropWait()
+Nextbackdrop()
+Changesize(amount)
+Size(%)
+Show()
+Hide()
+Layer(front, back) or (- amount) or (+ amount) or (layernumber)
+
 Sound:
+
+I’m going to do sound differently, scratch sound sucks
+
 
 Events:
 
+
+OnStart()
+OnKey()
+OnClick()
+OnBackdrop()
+When()
+OnMessage()
+
+SendMessage()
+SendMessageWait()
+
 Control:
+
+Wait(seconds)
+Repeat(amount)(code)
+Forever(code)
+If()(then)(else)
+WaitUntil()
+Repeatuntil()(code)
+StopScript()
+Kill()
+
+WhenClone(code)
+CreateClone()
+DeleteClone()
+
 
 Sensing:
 
-Operators:
+Ask(“text”) will be made obsolete by my new text functionality 
+DragMode(1 or 0)
+Timer(stop) or (start) or (reset)
 
 Variables:
 
+Set(variable)(value)
+Change(variable)(value)
 
+ShowVar(variable) will be made obsolete by my new text functionality 
+HideVar(variable) will be made obsolete by my new text functionality
+
+Lists:
+
+ListAdd(thing)(list)
+ListDelete(all, or thing)(list)
+ListInsert(thing)(at)(list)
+ListReplace(thing)(thing)(list)
+
+Showlist(list) will be made obsolete by my new text functionality 
+Hidelist(list) will be made obsolete by my new text functionality 
+
+Custom Blocks:
+
+Just functions lol
 
 
 From TurboWarp:
@@ -163,7 +224,6 @@ Python set methods:
 Python file methods:
 
 Python Keywords:
-
 
 
 
