@@ -1,0 +1,13 @@
+//main.tw
+
+Onstart(
+    set(x, 1)
+    Print("hello world")
+
+    if (x = 1)(
+        print("x equals 1")
+    )
+    else(
+        print("else")
+    )
+)

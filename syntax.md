@@ -68,6 +68,9 @@ I’m going to do sound differently, scratch sound sucks
 
 
 OnStart(code)
+
+executes what is inside "()" when the project is run.
+
 OnKey(key)(code)
 OnClick(code)
 OnBackdrop(backdrop)(code)
@@ -82,7 +85,7 @@ SendMessageWait(message)
 Wait(seconds)
 Repeat(amount)(code)
 Forever(code)
-If()(then)(else)
+If()(code)else()
 WaitUntil()
 RepeatUntil()(code)
 StopScript()
