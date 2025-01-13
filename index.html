@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextWarp IDE</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2e2e2e;
+            color: white;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .top-bar button {
+            background-color: #444;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .top-bar button:hover {
+            background-color: #666;
+        }
+
+        .top-bar button:active {
+            background-color: #888;
+        }
+
+        /* Main container */
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Sidebar (Sprite selector) */
+        .sprite-selector {
+            width: 240px;
+            background-color: #3b3b3b;
+            padding: 20px;
+            overflow-y: auto;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .sprite-item {
+            background-color: #4a4a4a;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .sprite-item:hover {
+            background-color: #616161;
+        }
+
+        /* Code editor and line numbers container */
+        .editor-container {
+            display: flex;
+            flex-grow: 1;
+            height: 100%;
+            padding: 20px;
+        }
+
+        /* Line numbers */
+        #lineNumbers {
+            width: 40px;
+            background-color: #333;
+            color: #888;
+            padding-top: 10px;
+            padding-right: 10px;
+            text-align: right;
+            font-family: monospace;
+            font-size: 16px;
+            white-space: nowrap;
+            height: 100%;
+            overflow: auto;
+        }
+
+        /* Code editor */
+        #codeEditor {
+            flex-grow: 1;
+            background-color: #1e1e1e;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 16px;
+            resize: none;
+            outline: none;
+            border: 1px solid #444;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        /* Console */
+        .console-container {
+            width: 480px;
+            height: 100%;
+            background-color: #333;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .console {
+            flex-grow: 1;
+            background-color: #222;
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            aspect-ratio:4/3;
+            margin-bottom: 20px;
+        }
+
+        /* Stage (Right side above console) */
+        .stage {
+            background-color: white;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            aspect-ratio: 4 / 3;
+            margin-bottom: 20px;
+        }
+
+        /* Button group */
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        /* Buttons */
+        button {
+            background-color: #444;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #666;
+        }
+
+        button:active {
+            background-color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div>TextWarp IDE</div>
+        <div>
+            <button>Load Project</button>
+            <button>Save</button>
+            <button>Run</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sprite-selector">
+            <div class="sprite-item">main.tw</div>
+            <div class="sprite-item">Sprite 2</div>
+            <div class="sprite-item">Sprite 3</div>
+        </div>
+
+        <!-- Main content -->
+        <div class="editor-container">
+            <!-- Line numbers -->
+            <div id="lineNumbers"></div>
+
+            <!-- Code editor -->
+            <textarea id="codeEditor" placeholder="Edit code here..."></textarea>
+        </div>
+
+        <!-- Console & Stage -->
+        <div class="console-container">
+            <!-- Stage -->
+            <div class="stage">Stage area (4:3)</div>
+
+            <!-- Console -->
+            <div class="console">Console output</div>
+        </div>
+    </div>
+</body>
+</html>
