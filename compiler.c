@@ -1,17 +1,18 @@
 #include<iostream>
 #include<ncurses.h>
+#include<string>
+
 
 function Events(){
     char started = 'false';
     char keycode = key;
-    char mousebutton = button;
+    char sprite = 'sprite';
 
     char OnStart() = 'if(started == true){}';
     char OnKey(key) = 'if (key == keycode){}';
-    char OnClick() =
 }
 
-function ConsoleHelp(){
+char ConsoleHelp(){
     char help(topic) = 'help(topic)';
     char topic = topic
 
